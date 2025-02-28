@@ -3,10 +3,10 @@ import React from "react";
 function NavBars() {
     return (
         <div className="top">
-            <p>ABOUT</p>
-            <p>RESUME</p>
-            <p>PORTFOLIO</p>
-            <p>CONTACT</p>
+            <button><b>ABOUT</b></button>
+            <button><b>RESUME</b></button>
+            <button><b>PORTFOLIO</b></button>
+            <button><b>CONTACT</b></button>
         </div>
     )
 }
