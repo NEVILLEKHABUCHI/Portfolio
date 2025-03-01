@@ -1,12 +1,12 @@
 import React from "react";
 
-function NavBars() {
+function NavBars({ handleClick }) {
     return (
         <div className="top">
-            <button><b>ABOUT</b></button>
-            <button><b>RESUME</b></button>
-            <button><b>PORTFOLIO</b></button>
-            <button><b>CONTACT</b></button>
+            <button onClick={() => handleClick("about")}><b>ABOUT</b></button>
+            <button onClick={() => handleClick("resume")}><b>RESUME</b></button>
+            <button onClick={() => handleClick("portfolio")}><b>PORTFOLIO</b></button>
+            <button onClick={() => handleClick("contact")}><b>CONTACT</b></button>
         </div>
     )
 }

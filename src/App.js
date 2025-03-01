@@ -1,15 +1,20 @@
 import React,{useState} from 'react';
 import NavBars from './Navbars';
+import About from './About';
+import Resume from './Resume';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 export default function App(){
   return <AppContainer/>
 }
 
 function AppContainer() {
+  const [selectedSection, setSelectedSection] = useState("about");
   return (
     <div className='appContainer'>
       <ContainerLeft/>
-      <ContainerRight/>
+      <ContainerRight selectedSection={selectedSection} handleSectionClick={setSelectedSection}/>
     </div>
   )
 }
@@ -77,7 +82,7 @@ function ContainerLeftBody({ showDetails }) {
         <i class="fa-solid fa-calendar-days"></i>
         <div className='birthDate'>
           <p><b>BIRTHDAY:</b></p>
-          <p>May 24, 2004</p>
+          <p>May 24</p>
         </div>
       </div>
 
@@ -99,10 +104,16 @@ function ContainerLeftBody({ showDetails }) {
   )
 }
 
-function ContainerRight() {
+function ContainerRight({ selectedSection, handleSectionClick }) {
   return (
     <div className='containerRight'>
-        <NavBars />
+        <NavBars handleClick={handleSectionClick}/>
+        <div className='contentSection'>
+          {selectedSection === "about" && <About />}
+          {selectedSection === "resume" && <Resume />}
+          {selectedSection === "portfolio" && <Portfolio />}
+          {selectedSection === "contact" && <Contact />}
+        </div>
     </div>
   )
 }

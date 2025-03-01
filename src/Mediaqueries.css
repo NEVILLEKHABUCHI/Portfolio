@@ -2,13 +2,13 @@
     body {
         height: max-content;
         overflow-y: scroll;
-        padding: 5vh 0;
     }
     .appContainer {
         width: 100vw;
         height: max-content;
         display: flex;
         flex-direction: column;
+        gap: 3vh;
         align-items: center;
         overflow-y: scroll;
     }
@@ -25,6 +25,17 @@
     .appContainer .containerLeft .content .containerLeftTop .icon {
         display: flex;
         justify-content: end;
+    }
+    .appContainer .containerLeft .content .containerLeftTop .icon button {
+        border: none;
+        background-color: #B8860B;
+        padding: 2px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .appContainer .containerLeft .content .containerLeftTop .icon button i {
+        color: white;
+        font-size: 1rem;
     }
     .appContainer .containerLeft .content .containerLeftTop .details {
         display: flex;
