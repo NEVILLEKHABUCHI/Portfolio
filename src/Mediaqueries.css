@@ -10,14 +10,16 @@
         flex-direction: column;
         gap: 3vh;
         align-items: center;
-        overflow-y: scroll;
+        padding-top: 2vh;
+        /* overflow-y: scroll; */
     }
     .appContainer .containerLeft {
-        width: 100vw;
+        width: 95vw;
         height: max-content;
+        padding-bottom: 0;
     }
     .appContainer .containerLeft .content {
-        width: 90vw;
+        width: 85vw;
     }
     .appContainer .containerLeft .content .containerLeftTop {
         height: 30vh;
@@ -28,13 +30,13 @@
     }
     .appContainer .containerLeft .content .containerLeftTop .icon button {
         border: none;
-        background-color: #B8860B;
+        background-color: #1B1B1B;
         padding: 2px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     .appContainer .containerLeft .content .containerLeftTop .icon button i {
-        color: white;
+        color: #B8860B;
         font-size: 1rem;
     }
     .appContainer .containerLeft .content .containerLeftTop .details {
@@ -43,7 +45,10 @@
     }
     .appContainer .containerLeft .content .containerLeftTop .details img {
         width: 30vw;
-        height: 20vh;
+        height: 18vh;
+    }
+    .appContainer .containerLeft .content .containerLeftTop .details .name_profession h3 {
+        font-size: 1rem;
     }
     .appContainer .containerLeft .content .containerLeftBody {
         max-height: 0;
