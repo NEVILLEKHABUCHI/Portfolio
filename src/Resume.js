@@ -2,8 +2,9 @@ import React from "react";
 
 function Resume() {
     return (
-        <div className="ResumeContainer">
-            THIS IS THE RESUME PAGE
+        <div className="resumeContainer">
+            <h2><b>Resume</b></h2>
+            <p id="underline"><span></span></p>
         </div>
     )
 }

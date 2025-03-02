@@ -107,7 +107,7 @@ function ContainerLeftBody({ showDetails }) {
 function ContainerRight({ selectedSection, handleSectionClick }) {
   return (
     <div className='containerRight'>
-        <NavBars handleClick={handleSectionClick}/>
+        <NavBars selectedSection={selectedSection} handleClick={handleSectionClick}/>
         <div className='contentSection'>
           {selectedSection === "about" && <About />}
           {selectedSection === "resume" && <Resume />}

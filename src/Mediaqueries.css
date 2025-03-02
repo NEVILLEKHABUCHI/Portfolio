@@ -55,12 +55,22 @@
     }
     .appContainer .containerRight {
         width: 100vw;
-        height: auto;
+        height: max-content;
         min-height: 100vh;
     }
     .appContainer .containerRight .top {
         position: fixed;
         bottom: 0;
         /* width: 100%; */
+        background-color: #3B3C36;
+    }
+    .appContainer .containerRight .top button {
+        background-color: #3B3C36;
+    }
+    .appContainer .containerRight .contentSection {
+        width: inherit;
+        height: max-content;
+        overflow-y: hidden;
+        padding-bottom: 5vh;
     }
 }
