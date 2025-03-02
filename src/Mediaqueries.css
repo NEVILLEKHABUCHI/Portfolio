@@ -17,6 +17,7 @@
         width: 95vw;
         height: max-content;
         padding-bottom: 0;
+        overflow-y: hidden;
     }
     .appContainer .containerLeft .content {
         width: 85vw;
