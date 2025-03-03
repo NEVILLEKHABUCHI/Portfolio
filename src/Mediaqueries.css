@@ -83,7 +83,7 @@
         width: inherit;
         height: max-content;
         overflow-y: hidden;
-        padding-bottom: 5vh;
+        padding-bottom: 2vh;
     }
     .appContainer .containerRight .contentSection .aboutContainer #underline span,
     .appContainer .containerRight .contentSection .resumeContainer #underline span,
