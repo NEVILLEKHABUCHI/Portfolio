@@ -38,7 +38,7 @@
 .appContainer .containerLeft .containerLeftTop {
   width: inherit;
   height: 50vh;
-  border-bottom: 1px solid #C0C0C0;
+  /* border-bottom: 1px solid #C0C0C0; */
 }
 .appContainer .containerLeft .containerLeftTop .icon {
   display: none;

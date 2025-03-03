@@ -82,7 +82,7 @@ function ContainerLeftBody({ showDetails }) {
         <i class="fa-solid fa-calendar-days"></i>
         <div className='birthDate'>
           <p><b>BIRTHDAY:</b></p>
-          <p>May 24</p>
+          <p>May 24, 2004</p>
         </div>
       </div>
 

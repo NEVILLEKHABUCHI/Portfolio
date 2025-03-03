@@ -2,6 +2,7 @@
     body {
         height: max-content;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     .appContainer {
         width: 100vw;
@@ -12,6 +13,7 @@
         align-items: center;
         padding-top: 2vh;
         /* overflow-y: scroll; */
+        overflow-x: hidden;
     }
     .appContainer .containerLeft {
         width: 95vw;
@@ -45,7 +47,7 @@
         flex-direction: row;
     }
     .appContainer .containerLeft .content .containerLeftTop .details img {
-        width: 30vw;
+        width: 35vw;
         height: 18vh;
     }
     .appContainer .containerLeft .content .containerLeftTop .details .name_profession h3 {
@@ -78,5 +80,11 @@
         height: max-content;
         overflow-y: hidden;
         padding-bottom: 5vh;
+    }
+    .appContainer .containerRight .contentSection .aboutContainer #underline span,
+    .appContainer .containerRight .contentSection .resumeContainer #underline span,
+    .appContainer .containerRight .contentSection .portfolioContainer #underline span,
+    .appContainer .containerRight .contentSection .contactContainer #underline span {
+        width: 10vw;
     }
 }
