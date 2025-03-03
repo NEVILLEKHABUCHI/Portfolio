@@ -214,7 +214,7 @@
   gap: 10px;
   padding: 15px;
   border-radius: 10px;
-  background-color: #3B3C36;
+  background-color: #111111;
   letter-spacing: 1px;
 }
 .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty i {
@@ -223,6 +223,7 @@
 }
 .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty div p {
   margin-top: 2vh;
+  color: #C0C0C0;
 }
 .appContainer .containerRight .contentSection .aboutContainer #divider {
   display: flex;

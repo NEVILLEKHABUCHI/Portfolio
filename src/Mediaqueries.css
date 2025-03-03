@@ -91,4 +91,10 @@
     .appContainer .containerRight .contentSection .contactContainer #underline span {
         width: 10vw;
     }
+    .appContainer .containerRight .contentSection .aboutContainer .expertise {
+        justify-content: center;
+    }
+    .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty {
+        width: 80vw;
+    }
 }
