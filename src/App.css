@@ -245,3 +245,35 @@
   color: #EF9B0F;
   font-size: 1.8rem;
 }
+.appContainer .containerRight .contentSection .resumeContainer .education,
+.appContainer .containerRight .contentSection .resumeContainer .experience {
+  padding-left: 5vw;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education .educationTop,
+.appContainer .containerRight .contentSection .resumeContainer .experience .experienceTop {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education .educationTop i,
+.appContainer .containerRight .contentSection .resumeContainer .experience .experienceTop i {
+  color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education ul {
+  padding-left: 2.3vw;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education ul li {
+  text-indent: 1.5vw;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education ul li::marker {
+  color: #C0C0C0;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education ul li p:first-of-type {
+  padding: 10px 0;
+  color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .resumeContainer .education ul li p:nth-of-type(2) {
+  color: #C0C0C0;
+}
