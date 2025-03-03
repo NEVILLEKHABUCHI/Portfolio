@@ -61,10 +61,14 @@
     .appContainer .containerLeft .content .containerLeftBody.show {
         max-height: 300px;
     }
+    .appContainer .containerLeft .containerLeftBody .contact {
+        gap: 5vw;
+    }
     .appContainer .containerRight {
         width: 100vw;
         height: max-content;
-        min-height: 100vh;
+        /* min-height: 100vh; */
+        padding-bottom: 10vh;
     }
     .appContainer .containerRight .top {
         position: fixed;
