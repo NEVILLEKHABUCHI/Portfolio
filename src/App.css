@@ -88,7 +88,7 @@
   margin-bottom: 2vh;
 }
 .appContainer .containerLeft .containerLeftBody .contact i {
-  color: #B8860B;
+  color: #EF9B0F;
 }
 .appContainer .containerLeft .containerLeftBody .contact p {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -109,7 +109,7 @@
   margin-top: 2vh;
 }
 .appContainer .containerLeft .containerLeftBody .socialMedia a i {
-  color: #B8860B;
+  color: #EF9B0F;
   font-size: 1.2rem;
 }
 .appContainer .containerRight {
@@ -126,7 +126,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 3vw;
-  border-bottom: 1px solid #B8860B;
+  border-bottom: 1px solid #EF9B0F;
 }
 .appContainer .containerRight .top button {
   background-color: #1B1B1B;
@@ -137,7 +137,7 @@
   cursor: pointer;
 }
 .appContainer .containerRight .top button.active {
-  color: #B8860B;
+  color: #EF9B0F;
 }
 .appContainer .containerRight .contentSection {
   width: inherit;
@@ -164,6 +164,7 @@
   /* width: inherit; */
   height: max-content;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5vh;
 }
 .appContainer .containerRight .contentSection .aboutContainer h2,
 .appContainer .containerRight .contentSection .resumeContainer h2,
@@ -190,10 +191,56 @@
   width: 5vw;
   height: 5px;
   border-radius: 10px;
-  background-color: #B8860B;
+  background-color: #EF9B0F;
 }
 .appContainer .containerRight .contentSection .aboutContainer #bio {
   padding: 15px;
   letter-spacing: 1px;
   color: #C0C0C0;
+}
+.appContainer .containerRight .contentSection .aboutContainer .expertise {
+  width: inherit;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 15px;
+}
+.appContainer .containerRight .contentSection .aboutContainer .expertise .specialty {
+  width: 27vw;
+  height: max-content;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #3B3C36;
+  letter-spacing: 1px;
+}
+.appContainer .containerRight .contentSection .aboutContainer .expertise .specialty i {
+  font-size: 2rem;
+  color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .aboutContainer .expertise .specialty div p {
+  margin-top: 2vh;
+}
+.appContainer .containerRight .contentSection .aboutContainer #divider {
+  display: flex;
+  justify-content: center;
+}
+.appContainer .containerRight .contentSection .aboutContainer #divider span {
+  width: 30vw;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .aboutContainer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  padding: 10px;
+}
+.appContainer .containerRight .contentSection .aboutContainer .icons i {
+  color: #EF9B0F;
+  font-size: 1.8rem;
 }

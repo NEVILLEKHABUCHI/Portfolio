@@ -17,6 +17,52 @@ function About() {
                 design and efficient code go hand in hand, and I am committed to pushing the boundaries of innovation in every project I take on. My goal is not just meet 
                 expectations but to exceed them - creating solutions that leave a lasting impact.
             </p>
+
+            <h2><b>What I am Doing</b></h2>
+            <p id="underline"><span></span></p>
+
+            <div className="expertise">
+                <div className="specialty">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <h4>Website Development</h4>
+                        <p>
+                            I develop websites with HTML, CSS, JavaScript and React for Frontend and php, 
+                            node-js and django for Backend.
+                        </p>
+                    </div>
+                </div>
+                <div className="specialty">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div>
+                        <h4>Android Development</h4>
+                        <p>
+                            I develop Android applications using Java.
+                        </p>
+                    </div>
+                </div>
+                <div className="specialty">
+                    <i class="fa-solid fa-palette"></i>
+                    <div>
+                        <h4>Graphics Designing</h4>
+                        <p>
+                            I design posters, flyers and banners using Canva and Photoshop. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p id="divider"><span></span></p>
+            <div className="icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-java"></i>
+            </div>
         </div>
     )
 }
