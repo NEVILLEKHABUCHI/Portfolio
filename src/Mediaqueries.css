@@ -97,6 +97,11 @@
     .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty {
         width: 80vw;
     }
+    .appContainer .containerRight .contentSection .resumeContainer .education ul,
+    .appContainer .containerRight .contentSection .resumeContainer .expertise ul,
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul {
+        padding-left: 7vw;
+    }
     .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li div p:nth-of-type(2) {
         width: 20vw;
         height: 6px;
