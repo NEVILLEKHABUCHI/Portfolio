@@ -39,7 +39,77 @@ function Resume() {
                 <div className="experienceTop">
                     <i class="fa-solid fa-book-open"></i>
                     <h3>Experience</h3>
+                    <br/>
                 </div>
+            </div>
+            <br/><br/>
+
+            <div className="expertise">
+                <br/>
+                <div className="expertiseTop">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Expertise</h3>
+                </div>
+                <ul>
+                    <br/>
+                    <li>
+                        <p>Website Development.</p>
+                    </li>
+                    <li>
+                        <p>Database Management - <span>MySQL, MongoDB.</span></p>
+                    </li>
+                    <li>
+                        <p>Android Development.</p>
+                    </li>
+                    <li>
+                        <p>Graphics Designing.</p>
+                    </li>
+                    <li>
+                        <p>Programming - <span>JavaScript, Java, Python.</span></p>
+                    </li>
+                    <li>
+                        <p>Team collaboration / co-ordination.</p>
+                    </li>
+                </ul>
+            </div>
+            <br/><br/>
+
+            <div className="skillsSummary">
+                <div className="skillsSummaryTop">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Skills Summary</h3>
+                </div>
+                <ul>
+                    <br/>
+                    <li>
+                        <div>
+                            <p>Website Development</p>
+                            <p><span></span></p>
+                            <p>85%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Database Management</p>
+                            <p><span></span></p>
+                            <p>75%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Android Development</p>
+                            <p><span></span></p>
+                            <p>45%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Graphics Designing</p>
+                            <p><span></span></p>
+                            <p>30%</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     )

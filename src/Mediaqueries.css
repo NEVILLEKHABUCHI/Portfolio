@@ -97,4 +97,20 @@
     .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty {
         width: 80vw;
     }
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li div p:nth-of-type(2) {
+        width: 20vw;
+        height: 6px;
+    }
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:first-of-type div p:nth-of-type(2) span {
+        width: 17vw;
+    }
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(2) div p:nth-of-type(2) span {
+        width: 15vw;
+    }
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(3) div p:nth-of-type(2) span {
+        width: 9vw;
+    }
+    .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(4) div p:nth-of-type(2) span {
+        width: 6vw;
+    }
 }
