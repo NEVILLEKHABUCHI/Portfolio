@@ -362,6 +362,26 @@
   background-color: #EF9B0F;
   border-radius: 5px;
 }
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioTop {
+  width: inherit;
+  margin-top: 1.5vh;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioTop button {
+  background-color: #1B1B1B;
+  color: white;
+  padding: 2px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioTop button.active {
+  color: #EF9B0F;
+}
+
+/* light theme styling */
 .containerLeft.light {
   background-color: white;
   color: #111111;
