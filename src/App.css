@@ -38,7 +38,6 @@
 .appContainer .containerLeft .containerLeftTop {
   width: inherit;
   height: 50vh;
-  /* border-bottom: 1px solid #C0C0C0; */
 }
 .appContainer .containerLeft .containerLeftTop .icon {
   display: none;
@@ -111,6 +110,36 @@
 .appContainer .containerLeft .containerLeftBody .socialMedia a i {
   color: #EF9B0F;
   font-size: 1.2rem;
+}
+.appContainer .containerLeft .containerLeftBottom {
+  width: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-top: 2vh;
+  padding-top: 1vh;
+  border-top: 1px solid #EF9B0F;
+}
+.appContainer .containerLeft .containerLeftBottom div {
+  width: inherit;
+  /* background-color: red; */
+}
+.appContainer .containerLeft .containerLeftBottom div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.appContainer .containerLeft .containerLeftBottom div p i {
+  color: #EF9B0F;
+}
+.appContainer .containerLeft .containerLeftBottom div section {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  margin-bottom: 1vh;
+  color: #C0C0C0;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .appContainer .containerRight {
   width: 60vw;
@@ -214,7 +243,8 @@
   gap: 10px;
   padding: 15px;
   border-radius: 10px;
-  background-color: #111111;
+  background-color: #3B3C36;
+  /* box-shadow: 1px 1px 3px 3px #2A3439; */
   letter-spacing: 1px;
 }
 .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty i {
@@ -244,6 +274,12 @@
 .appContainer .containerRight .contentSection .aboutContainer .icons i {
   color: #EF9B0F;
   font-size: 1.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.appContainer .containerRight .contentSection .aboutContainer .icons i:hover {
+  transform: scale(1.5); /* Slightly enlarges the icon */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0, 0.2); /* Adds depth */
+  cursor: pointer;
 }
 .appContainer .containerRight .contentSection .resumeContainer .education,
 .appContainer .containerRight .contentSection .resumeContainer .experience,
@@ -325,4 +361,52 @@
   width: 3vw;
   background-color: #EF9B0F;
   border-radius: 5px;
+}
+.containerLeft.light {
+  background-color: white;
+  color: #111111;
+}
+.containerRight.light {
+  background-color: white;
+  color: black;
+}
+.appContainer .containerLeft.light .containerLeftTop.light .details .name_profession p {
+    background-color: #C0C0C0;
+}
+.appContainer .containerLeft.light .containerLeftBody.light .contact p:nth-of-type(2) {
+  color: #343434;
+}
+.appContainer .containerLeft.light .containerLeftBottom.light div section {
+  color: #343434;
+}
+.appContainer .containerRight.light .top button {
+  background-color: white;
+  color: black;
+}
+.appContainer .containerRight.light .top button.active {
+  color: #EF9B0F;
+}
+.appContainer .containerRight.light .contentSection .aboutContainer #bio {
+  color: #343434;
+}
+.appContainer .containerRight.light .contentSection .aboutContainer .expertise .specialty {
+  background-color: #F7F7F7;
+  box-shadow: 1px 1px 3px 3px #C0C0C0;
+}
+.appContainer .containerRight.light .contentSection .aboutContainer .expertise .specialty div p {
+  color: #343434;
+}
+.appContainer .containerRight.light .contentSection .resumeContainer .education ul li::marker,
+.appContainer .containerRight.light .contentSection .resumeContainer .expertise ul li::marker,
+.appContainer .containerRight.light .contentSection .resumeContainer .skillsSummary ul li::marker {
+  color: #343434;
+}
+.appContainer .containerRight.light .contentSection .resumeContainer .education ul li p:nth-of-type(2) {
+  color: #343434;
+}
+.appContainer .containerRight.light .contentSection .resumeContainer .expertise ul li p {
+  color: #343434;
+}
+.appContainer .containerRight.light .contentSection .resumeContainer .skillsSummary ul li div {
+  color: #343434;
 }

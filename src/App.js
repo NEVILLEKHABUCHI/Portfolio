@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import NavBars from './Navbars';
 import About from './About';
 import Resume from './Resume';
@@ -10,16 +10,26 @@ export default function App(){
 }
 
 function AppContainer() {
+  const [theme, setTheme] = useState('light');
   const [selectedSection, setSelectedSection] = useState("about");
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  const handleThemeChange = (event) => {
+    setTheme(event.target.value);
+  }
+
   return (
     <div className='appContainer'>
-      <ContainerLeft/>
-      <ContainerRight selectedSection={selectedSection} handleSectionClick={setSelectedSection}/>
+      <ContainerLeft theme={theme} onThemeChange={handleThemeChange}/>
+      <ContainerRight selectedSection={selectedSection} handleSectionClick={setSelectedSection} theme={theme}/>
     </div>
   )
 }
 
-function ContainerLeft() {
+function ContainerLeft({theme, onThemeChange}) {
 
   const [showDetails, setShowDetails] = useState(false);
 
@@ -29,18 +39,19 @@ function ContainerLeft() {
 
 
   return (
-    <div className='containerLeft'>
+    <div className={`containerLeft ${theme}`}>
       <div className='content'>
-        <ContainerLeftTop onClick={handleClick} showDetails={showDetails}/>
-        <ContainerLeftBody showDetails={showDetails}/>
+        <ContainerLeftTop onClick={handleClick} showDetails={showDetails} theme={theme}/>
+        <ContainerLeftBody showDetails={showDetails} theme={theme}/>
+        <ContainerLeftBottom onThemeChange={onThemeChange} theme={theme}/>
       </div>
     </div>
   )
 }
 
-function ContainerLeftTop({ onClick, showDetails }) {
+function ContainerLeftTop({ onClick, showDetails, theme }) {
   return (
-    <div className='containerLeftTop'>
+    <div className={`containerLeftTop ${theme}`}>
       <div className='icon'>
         <button onClick={onClick}>
           <i className={`fa-solid ${showDetails? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
@@ -59,9 +70,9 @@ function ContainerLeftTop({ onClick, showDetails }) {
   )
 }
 
-function ContainerLeftBody({ showDetails }) {
+function ContainerLeftBody({ showDetails, theme }) {
   return (
-    <div className={`containerLeftBody ${showDetails ? 'show' : ''}`}>
+    <div className={`containerLeftBody ${showDetails ? 'show' : ''} ${theme}`}>
       <div className='contact'>
         <i class="fa-solid fa-envelope"></i>
         <div className='email'>
@@ -104,9 +115,29 @@ function ContainerLeftBody({ showDetails }) {
   )
 }
 
-function ContainerRight({ selectedSection, handleSectionClick }) {
+function ContainerLeftBottom({ onThemeChange, theme }) {
   return (
-    <div className='containerRight'>
+    <div className={`containerLeftBottom ${theme}`}>
+      <div>
+        <p><i className="fa solid fa-palette" id='icon'></i><b>Themes</b></p>
+
+      <section>
+        <input type='radio' value='light' id='light' name='theme' onChange={onThemeChange} defaultChecked/>
+        <label for='light'><b>Light</b></label><br/>
+      </section>
+
+      <section>
+        <input type='radio' value='dark' id='dark' name='theme' onChange={onThemeChange}/>
+        <label for='dark'><b>Dark</b></label><br/>
+      </section>
+      </div>
+    </div>
+  )
+}
+
+function ContainerRight({ selectedSection, handleSectionClick, theme }) {
+  return (
+    <div className={`containerRight ${theme}`}>
         <NavBars selectedSection={selectedSection} handleClick={handleSectionClick}/>
         <div className='contentSection'>
           {selectedSection === "about" && <About />}

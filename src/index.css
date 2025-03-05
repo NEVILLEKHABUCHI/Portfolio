@@ -13,3 +13,6 @@ body {
    /* overflow: hidden; */
    background-color: #3B3C36;
 }
+body.light {
+  background-color: #F5F5F5;
+}
