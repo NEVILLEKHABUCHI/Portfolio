@@ -380,6 +380,36 @@
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioTop button.active {
   color: #EF9B0F;
 }
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody {
+  width: inherit;
+  height: max-content;
+  padding-top: 2vh;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer {
+  width: inherit;
+  height: max-content;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img {
+  width: 27vw;
+  height: inherit;
+  object-fit: cover;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
+  width: 20vw;
+}
 
 /* light theme styling */
 .containerLeft.light {

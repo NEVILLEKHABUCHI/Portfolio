@@ -1,12 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 
 function Portfolio() {
     const [selectedProject, setSelectedProject] = useState('websites');
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const Images = [
+        '/websites/nevoline/Nevoline_1.png',
+        '/websites/nevoline/Nevoline_2.png',
+        '/websites/nevoline/Nevoline_3.png'
+    ]
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % websiteImages.length);
+    }
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + websiteImages.length) % websiteImages.length);
+    }
 
     const renderContent = () => {
         switch (selectedProject) {
             case "websites":
-                return <p>Here are some websites I've built</p>;
+                return(
+                    <div className="websiteContainer">
+                        <div className="website">
+                            <div className="websiteLeft">
+                                <i class="fa-solid fa-circle-chevron-left" onClick={prevImage}></i>
+                                <img src={websiteImages[currentImageIndex]} alt="Website Preview"/>
+                                <i class="fa-solid fa-circle-chevron-right" onClick={nextImage}></i>
+                            </div>
+                            <div className="websiteRight"></div>
+                        </div>
+                    </div>
+                )
             case "android":
                 return <p>Check out my android applications</p>
             case "graphics":
