@@ -46,7 +46,7 @@ function About() {
                     <div>
                         <h4>Graphics Designing</h4>
                         <p>
-                            I design posters, flyers and banners using Canva and Photoshop. 
+                            I design posters, flyers and banners using Adobe Photoshop. 
                         </p>
                     </div>
                 </div>

@@ -393,11 +393,15 @@
   width: inherit;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 2vw;
+  margin-bottom: 5vh;
+  /* padding: 2px; */
+  border: 1px solid gray;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft {
   width: 30vw;
-  height: 30vh;
+  max-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -407,8 +411,39 @@
   height: inherit;
   object-fit: cover;
 }
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft i{
+  color: #EF9B0F;
+}
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
-  width: 20vw;
+  width: 25vw;
+  height: inherit;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight h3 {
+  display: flex;
+  justify-content: center;
+  color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:first-of-type {
+  text-align: center;
+  letter-spacing: 1px;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) {
+  color: #C0C0C0;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) span {
+  color: #EF9B0F;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div {
+  display: flex;
+  justify-content: center;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div a {
+  text-decoration: none;
+  /* background-color: white; */
+  padding: 3px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  color: #EF9B0F;
 }
 
 /* light theme styling */
@@ -459,4 +494,18 @@
 }
 .appContainer .containerRight.light .contentSection .resumeContainer .skillsSummary ul li div {
   color: #343434;
+}
+.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioTop button {
+  background-color: #F7F7F7;
+  color: #1B1B1B;
+}
+.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioTop button.active {
+  color: #EF9B0F;
+}
+.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) {
+  color: #1B1B1B;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div a {
+  border: 1px solid #1B1B1B;
+  background-color: white;
 }
