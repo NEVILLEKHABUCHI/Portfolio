@@ -43,7 +43,7 @@ function ContainerLeft({theme, onThemeChange}) {
       <div className='content'>
         <ContainerLeftTop onClick={handleClick} showDetails={showDetails} theme={theme}/>
         <ContainerLeftBody showDetails={showDetails} theme={theme}/>
-        <ContainerLeftBottom onThemeChange={onThemeChange} theme={theme}/>
+        <ContainerLeftBottom showDetails={showDetails} onThemeChange={onThemeChange} theme={theme}/>
       </div>
     </div>
   )
@@ -115,9 +115,9 @@ function ContainerLeftBody({ showDetails, theme }) {
   )
 }
 
-function ContainerLeftBottom({ onThemeChange, theme }) {
+function ContainerLeftBottom({showDetails, onThemeChange, theme }) {
   return (
-    <div className={`containerLeftBottom ${theme}`}>
+    <div className={`containerLeftBottom ${showDetails ? 'show' : ''} ${theme}`}>
       <div>
         <p><i className="fa solid fa-palette" id='icon'></i><b>Themes</b></p>
 

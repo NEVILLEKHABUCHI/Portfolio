@@ -53,12 +53,14 @@
     .appContainer .containerLeft .content .containerLeftTop .details .name_profession h3 {
         font-size: 1rem;
     }
-    .appContainer .containerLeft .content .containerLeftBody {
+    .appContainer .containerLeft .content .containerLeftBody,
+    .appContainer .containerLeft .content .containerLeftBottom {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
     }
-    .appContainer .containerLeft .content .containerLeftBody.show {
+    .appContainer .containerLeft .content .containerLeftBody.show,
+    .appContainer .containerLeft .content .containerLeftBottom.show {
         max-height: 300px;
     }
     .appContainer .containerLeft .containerLeftBody .contact {
@@ -117,5 +119,19 @@
     }
     .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(4) div p:nth-of-type(2) span {
         width: 6vw;
+    }
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website {
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 0;
+    }
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft {
+        width: 90vw;
+    }
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img {
+        width: 85vw;
+    }
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
+        width: 90vw;
     }
 }
