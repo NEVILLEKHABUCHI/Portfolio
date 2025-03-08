@@ -77,7 +77,7 @@ function Portfolio() {
         <div className="website">
             <div className="websiteLeft">
                 <i className="fa-solid fa-circle-chevron-left" onClick={() => handlePrevImage(category, images)}></i>
-                <img src={images[currentImageIndex[category]]} alt={`${category} Preview`} />
+                <img src={images[currentImageIndex[category]]} alt={`${category} Preview`} loading="lazy" />
                 <i className="fa-solid fa-circle-chevron-right" onClick={() => handleNextImage(category, images)}></i>
             </div>
             <div className="websiteRight">

@@ -39,7 +39,7 @@
         border-bottom-right-radius: 5px;
     }
     .appContainer .containerLeft .content .containerLeftTop .icon button i {
-        color: #B8860B;
+        color: #228B22;
         font-size: 1rem;
     }
     .appContainer .containerLeft .content .containerLeftTop .details {
@@ -133,5 +133,11 @@
     }
     .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
         width: 90vw;
+    }
+    
+    /* Light */
+    .appContainer .containerLeft.light .content .containerLeftTop .icon button {
+        border: none;
+        background-color: white;
     }
 }

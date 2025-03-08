@@ -87,7 +87,7 @@
   margin-bottom: 2vh;
 }
 .appContainer .containerLeft .containerLeftBody .contact i {
-  color: #EF9B0F;
+  color: #228B22 ;
 }
 .appContainer .containerLeft .containerLeftBody .contact p {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -108,7 +108,7 @@
   margin-top: 2vh;
 }
 .appContainer .containerLeft .containerLeftBody .socialMedia a i {
-  color: #EF9B0F;
+  color: #228B22;
   font-size: 1.2rem;
 }
 .appContainer .containerLeft .containerLeftBottom {
@@ -117,7 +117,7 @@
   letter-spacing: 1px;
   margin-top: 2vh;
   padding-top: 1vh;
-  border-top: 1px solid #EF9B0F;
+  border-top: 1px solid #228B22;
 }
 .appContainer .containerLeft .containerLeftBottom div {
   width: inherit;
@@ -130,7 +130,7 @@
   gap: 1vw;
 }
 .appContainer .containerLeft .containerLeftBottom div p i {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerLeft .containerLeftBottom div section {
   display: flex;
@@ -155,7 +155,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 3vw;
-  border-bottom: 1px solid #EF9B0F;
+  border-bottom: 1px solid #228B22;
 }
 .appContainer .containerRight .top button {
   background-color: #1B1B1B;
@@ -166,7 +166,7 @@
   cursor: pointer;
 }
 .appContainer .containerRight .top button.active {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection {
   width: inherit;
@@ -220,7 +220,7 @@
   width: 5vw;
   height: 5px;
   border-radius: 10px;
-  background-color: #EF9B0F;
+  background-color: #228B22;
 }
 .appContainer .containerRight .contentSection .aboutContainer #bio {
   padding: 15px;
@@ -249,7 +249,7 @@
 }
 .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty i {
   font-size: 2rem;
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .aboutContainer .expertise .specialty div p {
   margin-top: 2vh;
@@ -263,7 +263,7 @@
   width: 30vw;
   height: 2px;
   border-radius: 10px;
-  background-color: #EF9B0F;
+  background-color: #228B22;
 }
 .appContainer .containerRight .contentSection .aboutContainer .icons {
   display: flex;
@@ -272,7 +272,7 @@
   padding: 10px;
 }
 .appContainer .containerRight .contentSection .aboutContainer .icons i {
-  color: #EF9B0F;
+  color: #228B22;
   font-size: 1.8rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -299,7 +299,7 @@
 .appContainer .containerRight .contentSection .resumeContainer .experience .experienceTop i,
 .appContainer .containerRight .contentSection .resumeContainer .expertise .expertiseTop i,
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary .skillsSummaryTop i {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .resumeContainer .education ul,
 .appContainer .containerRight .contentSection .resumeContainer .expertise ul,
@@ -320,7 +320,7 @@
 }
 .appContainer .containerRight .contentSection .resumeContainer .education ul li p:first-of-type {
   padding: 10px 0;
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .resumeContainer .education ul li p:nth-of-type(2) {
   color: #C0C0C0;
@@ -344,22 +344,22 @@
 }
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:first-of-type div p:nth-of-type(2) span {
   width: 8.5vw;
-  background-color: #EF9B0F;
+  background-color: #228B22;
   border-radius: 5px;
 }
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(2) div p:nth-of-type(2) span {
   width: 7.5vw;
-  background-color: #EF9B0F;
+  background-color: #228B22;
   border-radius: 5px;
 }
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(3) div p:nth-of-type(2) span {
   width: 4.5vw;
-  background-color: #EF9B0F;
+  background-color: #228B22;
   border-radius: 5px;
 }
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(4) div p:nth-of-type(2) span {
   width: 3vw;
-  background-color: #EF9B0F;
+  background-color: #228B22;
   border-radius: 5px;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioTop {
@@ -378,7 +378,7 @@
   font-family: 'Courier New', Courier, monospace;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioTop button.active {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody {
   width: inherit;
@@ -412,7 +412,7 @@
   object-fit: cover;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft i{
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
   width: 25vw;
@@ -421,7 +421,7 @@
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight h3 {
   display: flex;
   justify-content: center;
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:first-of-type {
   text-align: center;
@@ -431,7 +431,7 @@
   color: #C0C0C0;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) span {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div {
   display: flex;
@@ -443,7 +443,7 @@
   padding: 3px;
   border: 1px solid #C0C0C0;
   border-radius: 5px;
-  color: #EF9B0F;
+  color: #228B22;
 }
 
 /* light theme styling */
@@ -469,7 +469,7 @@
   color: black;
 }
 .appContainer .containerRight.light .top button.active {
-  color: #EF9B0F;
+  color:  #228B22;
 }
 .appContainer .containerRight.light .contentSection .aboutContainer #bio {
   color: #343434;
@@ -500,7 +500,7 @@
   color: #1B1B1B;
 }
 .appContainer .containerRight.light .contentSection .portfolioContainer .portfolioTop button.active {
-  color: #EF9B0F;
+  color: #228B22;
 }
 .appContainer .containerRight.light .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) {
   color: #1B1B1B;
