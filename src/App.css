@@ -445,6 +445,48 @@
   border-radius: 5px;
   color: #228B22;
 }
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer .graphicsImage {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer .graphicsImage:hover {
+  transform: scale(1.05);
+}
+/* Modal styling */
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer .imageViewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer .imageViewer img {
+  max-width: 90%;
+  max-height: 90%;
+}
+/* Styling the buttons inside:  .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .graphicsContainer .imageViewer*/
+.prevBtn, .nextBtn, .closeBtn {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.prevBtn { left: 20px; }
+.nextBtn { right: 20px; }
+.closeBtn { top: 10px; right: 20px; font-size: 30px; }
 
 /* light theme styling */
 .containerLeft.light {

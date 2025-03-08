@@ -6,7 +6,8 @@ function Portfolio() {
     const [currentImageIndex, setCurrentImageIndex] = useState({
         Western_Conglomerate: 0,
         Nevoline_Company: 0,
-        Nevoline_Agrovet: 0
+        Nevoline_Agrovet: 0,
+        Gogetters_Constitution: 0
     });
 
     const Western_Conglomerate_Images = [
@@ -27,9 +28,20 @@ function Portfolio() {
         '/websites/Nevoline_Agrovet/Nevoline_Agrovet_3.png'
     ]
 
-    // const Gogetters_Constitution_Images = [
-    //     '/websites/'
-    // ]
+    const Gogetters_Constitution_Images = [
+        '/websites/Gogetters_Constitution/Gogetters_Constitution_1.png',
+        '/websites/Gogetters_Constitution/Gogetters_Constitution_2.png',
+        '/websites/Gogetters_Constitution/Gogetters_Constitution_3.png'
+    ]
+
+    // Add state for graphics images and modal
+    const [graphicsImages] = useState([
+        "/graphics/Design_1.png",
+        "/graphics/Design_2.png",
+        "/graphics/Design_3.png"
+    ]);
+
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
     const websiteDetails = {
         "Western_Conglomerate": {
@@ -56,6 +68,14 @@ function Portfolio() {
             are sent to their emails.`,
             technologies: "EJS, Node-js, MySQL, MongoDB",
             link: "https://nevoline-agrovet.onrender.com/"
+        },
+        "Gogetters_Constitution": {
+            title: "Go-Getters Constitution",
+            description: `
+            This is a constitution website for a group (chama). It provides for a table of contents which directs a user to various articles and sub-articles of 
+            that particular constitution thereby making work easier for a member who wants to go through the constitution making it better than reading several pdf pages. `,
+            technologies: "React.js",
+            link: "https://gogetters-constitution.netlify.app/"
         }
     }
 
@@ -72,6 +92,24 @@ function Portfolio() {
             [category]: (prevIndex[category] - 1 + images.length) % images.length
         }));
     };
+
+    // Handle Image Click (When a user clicks an image, open a modal with navigation buttons)
+    const openImageViewer = (index) => {
+        setSelectedImageIndex(index);
+    }
+
+    // Handle Next and Previous Image
+    const handleNextGraphic = () => {
+        setSelectedImageIndex((prevIndex) => (prevIndex + 1) % graphicsImages.length);
+    };
+    const handlePrevGraphic = () => {
+        setSelectedImageIndex((prevIndex) => (prevIndex - 1 + graphicsImages.length) % graphicsImages.length);
+    }
+
+    // Close Modal on Click
+    const closeImageViewer = () => {
+        setSelectedImageIndex(null);
+    }
 
     const renderWebsiteSection = (category, images) => (
         <div className="website">
@@ -102,12 +140,29 @@ function Portfolio() {
                         {renderWebsiteSection("Western_Conglomerate", Western_Conglomerate_Images)}
                         {renderWebsiteSection("Nevoline_Company", Nevoline_Company_Images)}
                         {renderWebsiteSection("Nevoline_Agrovet", Nevoline_Agrovet_Images)}
+                        {renderWebsiteSection("Gogetters_Constitution", Gogetters_Constitution_Images)}
                     </div>
                 )
             case "android":
                 return <p>Check out my android applications</p>
             case "graphics":
-                return <p>Here are some of my graphic designs</p>
+                return(
+                    <div className="graphicsContainer">
+                        {graphicsImages.map((img, index) => (
+                            <img key={index} src={img} alt={`Graphic ${index}`} className="graphicsImage" onClick={() => openImageViewer(index)}/>
+                        ))}
+
+                        {/* Image Viewer Modal */}
+                        {selectedImageIndex !== null && (
+                            <div className="imageViewer">
+                                <button className="prevBtn" onClick={handlePrevGraphic}><i class="fa-solid fa-chevron-left"></i></button>
+                                <img src={graphicsImages[selectedImageIndex]} alt="Selected Graphic"/>
+                                <button className="nextBtn" onClick={handleNextGraphic}><i class="fa-solid fa-chevron-right"></i></button>
+                                <span className="closeBtn" onClick={closeImageViewer}>&times;</span>
+                            </div>
+                        )}
+                    </div>
+                )
             default:
                 return <p>Select a category to view my work</p>
         }
