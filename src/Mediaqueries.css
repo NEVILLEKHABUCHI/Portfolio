@@ -120,24 +120,31 @@
     .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(4) div p:nth-of-type(2) span {
         width: 6vw;
     }
-    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website {
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website,
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android {
         display: flex;
         flex-direction: column;
         padding: 2vh 0;
     }
-    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft {
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft,
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidLeft {
         width: 90vw;
     }
-    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img {
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img,
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidLeft img {
         width: 85vw;
     }
-    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight,
+    .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight {
         width: 90vw;
     }
     
     /* Light */
     .appContainer .containerLeft.light .content .containerLeftTop .icon button {
         border: none;
+        background-color: white;
+    }
+    .appContainer .containerRight.light .top {
         background-color: white;
     }
 }

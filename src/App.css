@@ -385,11 +385,13 @@
   height: max-content;
   padding-top: 2vh;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer {
   width: inherit;
   height: max-content;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android {
   width: inherit;
   display: flex;
   justify-content: space-between;
@@ -399,41 +401,51 @@
   /* padding: 2px; */
   border: 1px solid gray;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidLeft {
   width: 30vw;
-  max-height: 80vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft img,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidLeft img {
   width: 27vw;
+  max-height: 80vh;
   height: inherit;
   object-fit: cover;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft i{
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteLeft i,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidLeft i {
   color: #228B22;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight {
   width: 25vw;
   height: inherit;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight h3 {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight h3,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight h3 {
   display: flex;
   justify-content: center;
   color: #228B22;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:first-of-type {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:first-of-type,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight p:first-of-type {
   text-align: center;
   letter-spacing: 1px;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2),
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight p:nth-of-type(2) {
   color: #C0C0C0;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) span {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) span,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight p:nth-of-type(2) span {
   color: #228B22;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight div {
   display: flex;
   justify-content: center;
 }
@@ -544,10 +556,12 @@
 .appContainer .containerRight.light .contentSection .portfolioContainer .portfolioTop button.active {
   color: #228B22;
 }
-.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2) {
+.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight p:nth-of-type(2),
+.appContainer .containerRight.light .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight p:nth-of-type(2) {
   color: #1B1B1B;
 }
-.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div a {
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .websiteContainer .website .websiteRight div a,
+.appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight div a {
   border: 1px solid #1B1B1B;
   background-color: white;
 }

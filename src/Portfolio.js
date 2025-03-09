@@ -7,7 +7,8 @@ function Portfolio() {
         Western_Conglomerate: 0,
         Nevoline_Company: 0,
         Nevoline_Agrovet: 0,
-        Gogetters_Constitution: 0
+        Gogetters_Constitution: 0,
+        Carokens: 0
     });
 
     const Western_Conglomerate_Images = [
@@ -34,13 +35,19 @@ function Portfolio() {
         '/websites/Gogetters_Constitution/Gogetters_Constitution_3.png'
     ]
 
+    const Carokens_Images = [
+        '/android/carokens/Design_1.png',
+        '/android/carokens/Design_2.png'
+    ]
+
     // Add state for graphics images and modal
     const [graphicsImages] = useState([
         "/graphics/Design_1.png",
         "/graphics/Design_2.png",
-        "/graphics/Design_3.png"
+        "/graphics/Design_3.png",
+        "/graphics/Design_4.png"
     ]);
-
+    
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
     const websiteDetails = {
@@ -66,7 +73,7 @@ function Portfolio() {
             description: `This is an e-commerce and advertising website providing functionalities for both admin and clients. It allows 
             admins to edit or update product details accordingly. Clients on the other hand are able to make their purchases and on completion, notificatiosn and receipts 
             are sent to their emails.`,
-            technologies: "EJS, Node-js, MySQL, MongoDB",
+            technologies: "EJS, Node.js, MySQL, MongoDB",
             link: "https://nevoline-agrovet.onrender.com/"
         },
         "Gogetters_Constitution": {
@@ -76,6 +83,15 @@ function Portfolio() {
             that particular constitution thereby making work easier for a member who wants to go through the constitution making it better than reading several pdf pages. `,
             technologies: "React.js",
             link: "https://gogetters-constitution.netlify.app/"
+        }
+    }
+
+    const androidDetails = {
+        "Carokens": {
+            title: "Carokens",
+            description: `
+            This is an app for a chama. It allows users to monitor their savings by showing their total savings and their graphs for the same.`,
+            technologies: "Java, Node.js"
         }
     }
 
@@ -132,6 +148,23 @@ function Portfolio() {
         </div>
     )
 
+    const renderAndroidSection = (category, images) => (
+        <div className="android">
+            <div className="androidLeft">
+                <i className="fa-solid fa-circle-chevron-left" onClick={() => handlePrevImage(category, images)}></i>
+                <img src={images[currentImageIndex[category]]} alt={`${category} Preview`} loading="lazy" />
+                <i className="fa-solid fa-circle-chevron-right" onClick={() => handleNextImage(category, images)}></i>
+            </div>
+            <div className="androidRight">
+                <h3>{androidDetails[category]?.title}</h3>
+                <br/>
+                <p>{androidDetails[category]?.description}</p>
+                <br/>
+                <p>Technologies: <span>{androidDetails[category]?.technologies}</span></p>
+            </div>
+        </div>
+    )
+
     const renderContent = () => {
         switch (selectedProject) {
             case "websites":
@@ -144,12 +177,16 @@ function Portfolio() {
                     </div>
                 )
             case "android":
-                return <p>Check out my android applications</p>
+                return (
+                    <div className="androidContainer">
+                        {renderAndroidSection("Carokens", Carokens_Images)}
+                    </div>
+                )
             case "graphics":
                 return(
                     <div className="graphicsContainer">
                         {graphicsImages.map((img, index) => (
-                            <img key={index} src={img} alt={`Graphic ${index}`} className="graphicsImage" onClick={() => openImageViewer(index)}/>
+                            <img key={index} src={img} alt={`Graphic ${index}`} className="graphicsImage" loading="lazy" onClick={() => openImageViewer(index)}/>
                         ))}
 
                         {/* Image Viewer Modal */}
