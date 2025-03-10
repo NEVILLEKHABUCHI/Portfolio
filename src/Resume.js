@@ -106,7 +106,7 @@ function Resume() {
                         <div>
                             <p>Graphics Designing</p>
                             <p><span></span></p>
-                            <p>30%</p>
+                            <p>40%</p>
                         </div>
                     </li>
                 </ul>

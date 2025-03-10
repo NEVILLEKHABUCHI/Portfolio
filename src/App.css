@@ -358,7 +358,7 @@
   border-radius: 5px;
 }
 .appContainer .containerRight .contentSection .resumeContainer .skillsSummary ul li:nth-of-type(4) div p:nth-of-type(2) span {
-  width: 3vw;
+  width: 4vw;
   background-color: #228B22;
   border-radius: 5px;
 }
@@ -516,6 +516,26 @@
   display: flex;
   flex-direction: column;
   gap: 3vh;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form p {
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeOut 10s ease-in-out 2s forwards;
+  overflow: hidden;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form .success {
+  color: #228B22;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form .error {
+  color: red;
 }
 .appContainer .containerRight .contentSection .contactContainer .formContainer form div:first-of-type {
   display: flex;
