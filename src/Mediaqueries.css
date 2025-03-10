@@ -138,6 +138,18 @@
     .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight {
         width: 90vw;
     }
+    .appContainer .containerRight .contentSection .contactContainer .formContainer form {
+        width: 80vw;
+        gap: 2vh;
+    }
+    .appContainer .containerRight .contentSection .contactContainer .formContainer form div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .appContainer .containerRight .contentSection .contactContainer .formContainer form div input {
+        width: inherit;
+    }
     
     /* Light */
     .appContainer .containerLeft.light .content .containerLeftTop .icon button {

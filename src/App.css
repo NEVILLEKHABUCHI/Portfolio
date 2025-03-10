@@ -500,6 +500,71 @@
 .nextBtn { right: 20px; }
 .closeBtn { top: 10px; right: 20px; font-size: 30px; }
 
+/* Styling the Contact page */
+.appContainer .containerRight .contentSection .contactContainer .formContainer {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form {
+  width: 50vw;
+  height: max-content;
+  border: 1px solid #C0C0C0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div label {
+  display: none;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div input {
+  width: 22vw;
+  height: 5vh;
+  /* border: 1px solid #228B22; */
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  outline: none;
+  background-color: #353839;
+  color: white;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div input::placeholder {
+  color: #C0C0C0;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:nth-of-type(2) textarea {
+  background-color: #353839;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  color: white;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:nth-of-type(2) textarea::placeholder {
+  color: #C0C0C0;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+}
+.appContainer .containerRight .contentSection .contactContainer .formContainer form div:nth-of-type(3) button {
+  padding: 5px;
+  border: none;
+  background-color: #228B22;
+  color: white;
+  border-radius: 5px;
+}
+
 /* light theme styling */
 .containerLeft.light {
   background-color: white;
@@ -564,4 +629,18 @@
 .appContainer .containerRight .contentSection .portfolioContainer .portfolioBody .androidContainer .android .androidRight div a {
   border: 1px solid #1B1B1B;
   background-color: white;
+}
+.appContainer .containerRight.light .contentSection .contactContainer .formContainer form div input {
+  background-color: #E5E4E2;
+  color: black;
+}
+.appContainer .containerRight.light .contentSection .contactContainer .formContainer form div input::placeholder {
+  color: #353839;
+}
+.appContainer .containerRight.light .contentSection .contactContainer .formContainer form div:nth-of-type(2) textarea {
+  background-color: #E5E4E2;
+  color: black;
+}
+.appContainer .containerRight.light .contentSection .contactContainer .formContainer form div:nth-of-type(2) textarea::placeholder {
+  color: #353839;
 }

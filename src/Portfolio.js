@@ -91,7 +91,7 @@ function Portfolio() {
             title: "Carokens",
             description: `
             This is an app for a chama. It allows users to monitor their savings by showing their total savings and their graphs for the same.`,
-            technologies: "Java, Node.js"
+            technologies: "Java, Node.js, MySQL"
         }
     }
 
