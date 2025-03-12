@@ -193,7 +193,7 @@ function Portfolio() {
                         {selectedImageIndex !== null && (
                             <div className="imageViewer">
                                 <button className="prevBtn" onClick={handlePrevGraphic}><i class="fa-solid fa-chevron-left"></i></button>
-                                <img src={graphicsImages[selectedImageIndex]} alt="Selected Graphic"/>
+                                <img src={graphicsImages[selectedImageIndex]} alt="Selected Graphic" loading="lazy"/>
                                 <button className="nextBtn" onClick={handleNextGraphic}><i class="fa-solid fa-chevron-right"></i></button>
                                 <span className="closeBtn" onClick={closeImageViewer}>&times;</span>
                             </div>
