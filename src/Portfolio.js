@@ -46,7 +46,8 @@ function Portfolio() {
         "/graphics/Design_2.png",
         "/graphics/Design_3.png",
         "/graphics/Design_4.png",
-        "/graphics/Design_5.png"
+        "/graphics/Design_5.png",
+        "graphics/Design_6.png"
     ]);
     
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
