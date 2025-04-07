@@ -63,6 +63,7 @@ function About() {
                 <i class="fa-brands fa-python"></i>
                 <i class="fa-brands fa-java"></i>
                 <i class="fa-solid fa-database"></i>
+                <i class="fab fa-github"></i>
             </div>
         </div>
     )
