@@ -23,13 +23,13 @@ function Resume() {
                     <li>
                         <h4>Chavakali Boys High School</h4>
                         <p>2018 - 2021</p>
-                        <p>I attained a mean grade of a B+.</p>
+                        <p>Kenya Certificate of Secondary Education (K.C.S.E)</p>
                     </li>
                     <br/>
                     <li>
                         <h4>Imani Primary School</h4>
                         <p>2007 - 2017</p>
-                        <p>I attained 392/500 marks.</p>
+                        <p>Kenya Certificate of Primary Education (K.C.P.E)</p>
                     </li>
                 </ul>
             </div>
