@@ -4,6 +4,7 @@ import About from './About';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import { initGA, logPageView } from './ga'; 
 
 export default function App(){
   return <AppContainer/>
@@ -15,6 +16,11 @@ function AppContainer() {
 
   useEffect(() => {
     document.body.className = theme;
+
+    // Google Analytics setup
+    const measurementId = 'G-9G2C16312E';
+    initGA(measurementId);
+    logPageView(window.location.pathname);
   }, [theme]);
 
   const handleThemeChange = (event) => {
