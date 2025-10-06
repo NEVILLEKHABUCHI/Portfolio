@@ -54,6 +54,17 @@ function Portfolio() {
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
     const websiteDetails = {
+        "NL_Welfare": {
+            title: "Nevoline Welfare System",
+            description: `
+            This is a web application that serves as a comprehensive platform with dual interfaces catering to both administrators and members. For 
+            administrators, it provides complete oversight of welfare group operations through an advanced dashboard featuring real-time member management 
+            with compliance tracking, automated M-Pesa integration for seamless contribution processing and sophisticated analytical reporting tools. Members access a 
+            dedicated portal where they can manage their personal contributions, track compliance status, view payment history and receive group communications - all through 
+            the same web platform but with role appropriate permissions. This unified web approach ensures complete transparency and accountability while providing convenient 
+            access for all stakeholders through a single, responsive application that adapts to each user's needs and responsibilities.`,
+            technologies: "React.js, Django"
+        },
         "Western_Conglomerate": {
             title: "Western Conglomerate State",
             description: `
@@ -90,6 +101,15 @@ function Portfolio() {
     }
 
     const androidDetails = {
+        "Nevoline Welfare System": {
+            title: "Nevoline Welfare System",
+            description: `
+            This android application delivers a personalized welfare management experience directly to members' smartphones, putting community support in their pockets. Members 
+            can effortlessly make contributions through integrated M-Pesa payments, track their personal compliance status in real-time, receive instant notifications about group activities 
+            and access their complete contribution history on-the-go. The mobile-first design focuses on simplicity and convenience, allowing members to stay connected with their welfare 
+            group without the complexity of administrative functions. With secure authentication and offline capability for basic features, the app ensures members remain engaged and compliant 
+            while maintaining easy access to their welfare community whenever and wherever they need it.`
+        },
         "Carokens": {
             title: "Carokens",
             description: `
