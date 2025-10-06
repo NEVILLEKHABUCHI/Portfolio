@@ -13,6 +13,14 @@ function About() {
                 My journey in technology has been fueled by the drive to turn ideas into intuitive, user-friendly solutions. Whether it's crafting dynamic websites, developing 
                 high performance Android applications or designing captivating visuals, I strive to blend creativity with technical precision.
                 <br/><br/>
+                As an AI and ML enthusiast, I actively integrate artificial intelligence and machine learning capabilities into the applications and websites I build. From implementing 
+                predictive analytics to developing intelligent chatbots and computer vision features, I leverage AI/ML technologies to create more adaptive, personalized and intelligent 
+                user experiences that evolve and improve over time.
+                <br/><br/>
+                I possess extensive experience working with APIs, designing and integrating RESTful services to enable seamless data exchange and functionality across 
+                different platforms. My expertise includes developing robust backend APIs, integrating third-party services, and ensuring secure, efficient communication 
+                between frontend and backend systems while maintaining optimal performance and scalability.
+                <br/><br/>
                 Over the years, I have honed my skills across multiple disciplines, mastering the tools and technologies needed to bring concepts to life. I believe that great 
                 design and efficient code go hand in hand, and I am committed to pushing the boundaries of innovation in every project I take on. My goal is not just meet 
                 expectations but to exceed them - creating solutions that leave a lasting impact.
@@ -37,7 +45,7 @@ function About() {
                     <div>
                         <h4>Android Development</h4>
                         <p>
-                            I develop Android applications using Java.
+                            I develop Android applications using Java and React Native.
                         </p>
                     </div>
                 </div>
@@ -46,7 +54,7 @@ function About() {
                     <div>
                         <h4>Graphics Designing</h4>
                         <p>
-                            I design posters, flyers and banners using Adobe Photoshop. 
+                            I design posters, flyers and banners using Adobe Photoshop and Canva. 
                         </p>
                     </div>
                 </div>
